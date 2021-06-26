@@ -1,0 +1,30 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid brown;
+}
+.image_container {
+    width: 500px;
+    height: 500px;
+}
+#picture_frame {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
