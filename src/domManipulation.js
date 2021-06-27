@@ -4,23 +4,23 @@ circles[0].style.backgroundColor = 'red';
 let a = 0;
 
 const showNextImage = () => {
-  if (a === 2) {
+  if (a === 3) {
     a = -1;
   }
   a += 1;
 
   switch (a) {
     case 0:
-      images[2].classList.replace('visible', 'hidden');
+      images[3].classList.replace('visible', 'hidden');
       images[0].classList.replace('hidden', 'visible');
-      circles[2].style.backgroundColor = '#bbb';
+      circles[3].style.backgroundColor = '#bbb';
       circles[0].style.backgroundColor = 'red';
       break;
-    case 2:
-      images[1].classList.replace('visible', 'hidden');
-      images[2].classList.replace('hidden', 'visible');
-      circles[1].style.backgroundColor = '#bbb';
-      circles[2].style.backgroundColor = 'red';
+    case 3:
+      images[2].classList.replace('visible', 'hidden');
+      images[3].classList.replace('hidden', 'visible');
+      circles[2].style.backgroundColor = '#bbb';
+      circles[3].style.backgroundColor = 'red';
       break;
     default:
       images[a - 1].classList.replace('visible', 'hidden');
@@ -33,7 +33,7 @@ const showNextImage = () => {
 const showPreviousImage = () => {
   a -= 1;
   if (a < 0) {
-    a = 2;
+    a = 3;
   }
   switch (a) {
     case 0:
@@ -42,11 +42,11 @@ const showPreviousImage = () => {
       circles[1].style.backgroundColor = '#bbb';
       circles[0].style.backgroundColor = 'red';
       break;
-    case 2:
+    case 3:
       images[0].classList.replace('visible', 'hidden');
-      images[2].classList.replace('hidden', 'visible');
+      images[3].classList.replace('hidden', 'visible');
       circles[0].style.backgroundColor = '#bbb';
-      circles[2].style.backgroundColor = 'red';
+      circles[3].style.backgroundColor = 'red';
       break;
     default:
       images[a + 1].classList.replace('visible', 'hidden');
