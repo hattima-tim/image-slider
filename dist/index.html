@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://kit.fontawesome.com/53348e0e14.js" crossorigin="anonymous"></script>
         <title>Image Slider</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -13,14 +15,16 @@
                 <img class="hidden" src="picture/Fraser River, east of Vancouver, British Columbia, Canada, with the Golden Ears peaks.jpg">
                 <img class="hidden" src="picture/New River Gorge Bridge, New River Gorge National Park and Preserve, West Virginia, USA.jpg">
             </div>
-            <button id='forward'>'>'</button>
-            <button id="backward">'<'</button>
         </div>
-        <div id='dot'>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div id='navigation_tools_container'>
+            <div id='navigation_tools'>
+                <i class="fas fa-angle-left" id="backward"></i>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <i class="fas fa-angle-right" id='forward'></i>
+            </div>
         </div>
          <script src='main.js'></script>
     </body>
